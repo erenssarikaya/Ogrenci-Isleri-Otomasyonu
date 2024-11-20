@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0197B101-E60D-4EA6-A05A-ED66A09B08A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ogrenciotomasyonu</RootNamespace>
+    <AssemblyName>ogrenciotomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ekranlar\LoginOgrenci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekranlar\LoginOgrenci.Designer.cs">
+      <DependentUpon>LoginOgrenci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ıvır zıvır\DersDüzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ıvır zıvır\DersDüzenle.Designer.cs">
+      <DependentUpon>DersDüzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ıvır zıvır\DersEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ıvır zıvır\DersEkle.Designer.cs">
+      <DependentUpon>DersEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ıvır zıvır\DersListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ıvır zıvır\DersListele.Designer.cs">
+      <DependentUpon>DersListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ıvır zıvır\DersSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ıvır zıvır\DersSil.Designer.cs">
+      <DependentUpon>DersSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ıvır zıvır\Düzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ıvır zıvır\Düzenle.Designer.cs">
+      <DependentUpon>Düzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ıvır zıvır\Hoca_Ders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ıvır zıvır\Hoca_Ders.Designer.cs">
+      <DependentUpon>Hoca_Ders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ıvır zıvır\Listele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ıvır zıvır\Listele.Designer.cs">
+      <DependentUpon>Listele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ıvır zıvır\not_ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ıvır zıvır\not_ekle.Designer.cs">
+      <DependentUpon>not_ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekranlar\ogrenci_ekrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekranlar\ogrenci_ekrani.Designer.cs">
+      <DependentUpon>ogrenci_ekrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ıvır zıvır\Not_Ekleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ıvır zıvır\Not_Ekleme.Designer.cs">
+      <DependentUpon>Not_Ekleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ıvır zıvır\OgrenciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ıvır zıvır\OgrenciEkle.Designer.cs">
+      <DependentUpon>OgrenciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ıvır zıvır\Profil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ıvır zıvır\Profil.Designer.cs">
+      <DependentUpon>Profil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ıvır zıvır\Sil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ıvır zıvır\Sil.Designer.cs">
+      <DependentUpon>Sil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekranlar\LoginCalisan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekranlar\LoginCalisan.Designer.cs">
+      <DependentUpon>LoginCalisan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekranlar\Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekranlar\Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekranlar\Hoca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekranlar\Hoca.Designer.cs">
+      <DependentUpon>Hoca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekranlar\admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekranlar\admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekranlar\ogrenci_isleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekranlar\ogrenci_isleri.Designer.cs">
+      <DependentUpon>ogrenci_isleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ekranlar\LoginOgrenci.resx">
+      <DependentUpon>LoginOgrenci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ıvır zıvır\DersDüzenle.resx">
+      <DependentUpon>DersDüzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ıvır zıvır\DersEkle.resx">
+      <DependentUpon>DersEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ıvır zıvır\DersListele.resx">
+      <DependentUpon>DersListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ıvır zıvır\DersSil.resx">
+      <DependentUpon>DersSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ıvır zıvır\Düzenle.resx">
+      <DependentUpon>Düzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ıvır zıvır\Hoca_Ders.resx">
+      <DependentUpon>Hoca_Ders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ıvır zıvır\Listele.resx">
+      <DependentUpon>Listele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ıvır zıvır\not_ekle.resx">
+      <DependentUpon>not_ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekranlar\ogrenci_ekrani.resx">
+      <DependentUpon>ogrenci_ekrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ıvır zıvır\Not_Ekleme.resx">
+      <DependentUpon>Not_Ekleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ıvır zıvır\OgrenciEkle.resx">
+      <DependentUpon>OgrenciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ıvır zıvır\Profil.resx">
+      <DependentUpon>Profil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ıvır zıvır\Sil.resx">
+      <DependentUpon>Sil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekranlar\LoginCalisan.resx">
+      <DependentUpon>LoginCalisan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekranlar\Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekranlar\ogrenci_isleri.resx">
+      <DependentUpon>ogrenci_isleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekranlar\admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekranlar\Hoca.resx">
+      <DependentUpon>Hoca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
